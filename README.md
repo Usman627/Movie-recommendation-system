@@ -15,4 +15,5 @@ Make recommendations: Once you have a trained and evaluated model, you can use i
 Deploy the model: Finally, you will need to deploy the model so that it can be used to make recommendations in a production environment. This may involve integrating the model into a web application or a recommendation engine service.
 
 **About the code**
+
 This code reads in a CSV file of user ratings for movies, creates a pivot table of users and movies, and converts the pivot table to a sparse matrix. It then creates a NearestNeighbors model and fits it to the matrix. The recommend function uses the model to find the nearest neighbors of a given user and returns a list of movie recommendations based on the ratings of those neighbors. The function can then be tested by calling it with a user ID and the number of recommendations desired.
